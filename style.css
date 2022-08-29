@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Alte Haas";
+  src: url(../alte_haas_grotesk/AlteHaasGroteskBold.ttf) format("ttf");
+  src: url(../alte_haas_grotesk/AlteHaasGroteskRegular.ttf) format("ttf");
+}
+@font-face {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  src: url(../Impact-Font/impact.ttf) format("ttf");
+}
+nav {
+  color: #222222;
+  border: 2px solid #E0E0E0;
+  background-color: white;
+  box-shadow: 2px 2px 5px #FDA600;
+  border-radius: 30px;
+  font-size: 1.5 rem;
+  font-family: Impact;
+}
+
+header {
+  padding: 1em 0;
+  width: 100%;
+}
+header img {
+  height: 10vh;
+}
+
+.section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/WhatsApp\ Image\ 2022-08-29\ at\ 9.55.14\ AM\ \(1\).jpeg);
+  background-repeat: no-repeat;
+  border-top: 10px solid #FDA600;
+  background-size: cover;
+  height: 100vh;
+}
+.section__cta {
+  color: #F6A608;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 0.5em;
+  font-family: "Alte Haas";
+}
+.section__cta h1 {
+  font-size: 5rem;
+}
+.section__cta p {
+  font-size: 3rem;
+}
+
+.home-page {
+  display: flex;
+  align-items: flex-end;
+  border: 8px 1px solid black;
+}/*# sourceMappingURL=style.css.map */
