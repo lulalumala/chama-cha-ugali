@@ -1,0 +1,127 @@
+@use "../sass/base";
+
+.login {
+    font-size: 1.5em;
+    background-color: #F6A608;
+
+    input {
+        // display: block;
+        margin: .5em 0;
+        font-size: 1em;
+        padding: 0.5em;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    input:focus {
+        outline: none;
+    }
+}
+
+.checkbox {
+    display: flex;
+}
+
+.login__flex {
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-container {
+    width: 40%;
+    // border: 1px solid black;
+
+}
+
+.register__form {
+    // display: none;
+    font-size: 1.5rem;
+
+    label {
+        display: block;
+    }
+}
+
+
+
+button {
+    display: block;
+    margin: 1em auto;
+    width: 30%;
+    padding: .5em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 3px grey;
+    background-color: #F6A608;
+}
+
+.password__reset {
+    text-align: center;
+}
+
+.tabs {
+    list-style: none;
+    position: relative;
+    margin: 80px 0 0 10px;
+
+}
+
+.tabs li {
+    display: block;
+    color: black;
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.tabs label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 1rem;
+    background: #F6A608;
+    position: relative;
+    top: 4px;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.label_register {
+    cursor: pointer;
+}
+
+.tabs .label_register:hover {
+    background: white;
+}
+
+.tabs .tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    background: #F6A608;
+    border: 1px solid black;
+}
+
+.tabs [id^="tab"]:checked+label {
+    top: 0;
+    padding-top: 17px;
+}
+
+
+.tabs [id^="tab"]:checked~[id^="tab-content"] {
+    display: block;
+}

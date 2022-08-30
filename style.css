@@ -19,8 +19,12 @@ nav {
   background-color: white;
   box-shadow: 2px 2px 5px #FDA600;
   border-radius: 30px;
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
   font-family: Impact;
+}
+nav ul li a {
+  color: #F6A608;
+  text-decoration: none;
 }
 
 header {
@@ -34,7 +38,7 @@ header img {
 .section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/WhatsApp\ Image\ 2022-08-29\ at\ 9.55.14\ AM\ \(1\).jpeg);
   background-repeat: no-repeat;
-  border-top: 10px solid #FDA600;
+  border-top: 5px solid #FDA600;
   background-size: cover;
   height: 100vh;
 }
@@ -55,5 +59,134 @@ header img {
 .home-page {
   display: flex;
   align-items: flex-end;
-  border: 8px 1px solid black;
+  border: 8px solid black;
+}
+
+ul a {
+  color: #F6A608;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.login {
+  font-size: 1.5em;
+  background-color: #F6A608;
+}
+.login input {
+  margin: 0.5em 0;
+  font-size: 1em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.login input:focus {
+  outline: none;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.login__flex {
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  width: 40%;
+}
+
+.register__form {
+  font-size: 1.5rem;
+}
+.register__form label {
+  display: block;
+}
+
+button {
+  display: block;
+  margin: 1em auto;
+  width: 30%;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 3px grey;
+  background-color: #F6A608;
+}
+
+.password__reset {
+  text-align: center;
+}
+
+.tabs {
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+}
+
+.tabs li {
+  display: block;
+  color: black;
+}
+
+.tabs input[type=radio] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.tabs label {
+  display: block;
+  padding: 14px 21px;
+  border-radius: 2px 2px 0 0;
+  font-size: 1rem;
+  background: #F6A608;
+  position: relative;
+  top: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.label_register {
+  cursor: pointer;
+}
+
+.tabs .label_register:hover {
+  background: white;
+}
+
+.tabs .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 25px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  background: #F6A608;
+  border: 1px solid black;
+}
+
+.tabs [id^=tab]:checked + label {
+  top: 0;
+  padding-top: 17px;
+}
+
+.tabs [id^=tab]:checked ~ [id^=tab-content] {
+  display: block;
+}
+
+.contact {
+  background-color: #FDA600;
+}
+
+.about {
+  background-color: #FDA600;
+}
+
+.yellow-bg {
+  background-color: #FDA600;
 }/*# sourceMappingURL=style.css.map */

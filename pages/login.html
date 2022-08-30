@@ -17,35 +17,97 @@
     <link rel="stylesheet" href="../style.css" />
     <title>CHAMA CHA UGALI</title>
   </head>
-  <body>
-    <div class="login__form">
-      <form action="Login">
-        <button>Login</button>
-        <button>Register</button>
-        <label for="Email Address">Email Address </label>
-        <input type="email" />
-        <label for="password">Password</label>
-        <input type="password" />
-        <input type="checkbox" />
-        <span>Keep me logged in.</span>
-        <button>Login</button>
-        <p>Forgot your password?</p>
-      </form>
+  <body class="login">
+    <header class="">
+      <nav class="d-flex justify-content-between container align-items-center">
+        <ul role="button" class="list-unstyled">
+         <a href="../index.html"><li><img src="../images/CCU.jpg" alt="logo" /></li></a> 
+        </ul>
+        <ul role="button" class="list-unstyled d-flex flex-wrap gap-2">
+          <a href="./login.html" target="_blank"><li>LOGIN</li></a>
+          <a href="./login.html" target="_blank"> <li>SIGN UP</li></a>
+        </ul>
+        <ul role="button" class="d-flex gap-2 list-unstyled">
+          <a href="./contact.html" target="_blank"><li>CONTACT</li></a>
+          <a href="./about.html" target="_blank"><li>ABOUT US</li></a>
+        </ul>
+      </nav>
+    </header>
+    <div class="login__flex">
+      <div class="login-container">
+        <ul class="tabs d-flex">
+            <li>
+                <input type="radio" name="tabs" id="tab1" checked />
+                <label class="label_register" for="tab1">Login</label>
+                <div id="tab-content1" class="tab-content">
+                    <div class="login__form">
+                        <form action="Login">
+                          <label for="Email Address">Email Address </label>
+                          <input class="email-address" type="email" />
+                          <label for="password">Password</label>
+                          <input class="password-address" type="password" />
+                          <div class="checkbox"><input type="checkbox"></div>
+                          <span><p>Keep me logged in.</p> </span>
+                          <button class="login">Login</button>
+                          <p class="password__reset">Forgot your password?</p>
+                        </form>
+                      </div>            </div>
+            </li>
+          
+            <li>
+                <input type="radio" name="tabs" id="tab2" />
+                <label class="label_register" for="tab2">Register</label>
+                <div id="tab-content2" class="tab-content">
+                    <div class="register__form">
+                        <form action="register">
+                          <label for="Email Address">Email Address </label><label class="Eaddress" for=""></label>
+                          <input class="email-input" type="email" />
+                          <label for="password">Password</label> <label class="pword" for=""></label>
+                          <input class="password-input" type="password" />
+                          <label for="confirm">Confirm Password</label> <label class="confirm" for=""></label>
+                          <input class="confirm-password" type="password" />
+                          <button class="submit">Submit</button>
+                        </form>
+                      </div>            
+                    </div>
+            </li>
+        </ul>
+        <!-- <div class="login__register">
+          <p>Login</p>
+          <p>Register</p>
+        </div>
+        <div class="login__form">
+          <form action="Login">
+            <label for="Email Address">Email Address </label>
+            <input type="email" />
+            <label for="password">Password</label>
+            <input type="password" />
+            <input type="checkbox" />
+            <span>Keep me logged in.</span>
+            <button>Login</button>
+            <p>Forgot your password?</p>
+          </form>
+        </div>
+        <div class="register__form">
+          <form action="register">
+            <label for="Email Address">Email Address </label>
+            <input type="email" />
+            <label for="password">Password</label>
+            <input type="password" />
+            <label for="confirm">Confirm Password</label>
+            <input type="password" />
+            <button>Submit</button>
+          </form>
+          <form action="Register"></form>
+        </div>
+      </div> -->
     </div>
-    <div class="register__form">
-      <form action="register">
-        <button>Login</button>
-        <button>Register</button>
-        <label for="Email Address">Email Address </label>
-        <input type="email" />
-        <label for="password">Password</label>
-        <input type="password" />
-        <label for="confirm">Confirm Password</label>
-        <input type="password" />
-        <button>Login</button>
-        <p>Forgot your password?</p>
-      </form>
-      <form action="Register"></form>
+   
+    
+    <div style="clear:both;">
     </div>
+    
+   
+    <script src="../scripts/app.js"></script>
   </body>
 </html>
