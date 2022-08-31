@@ -2,6 +2,7 @@
 
 .about {
     background-color: #FDA600;
+    line-height: 1.5;
 
     &__info {
         padding: 1.5em;
@@ -9,6 +10,13 @@
         font-size: 1em;
         // border: 1px solid black;
         box-shadow: 2px 2px 5px black;
+        ul{
+            list-style-type: none;
+            li{
+                padding-left:2em ;
+                background: url("../images/bullet.png") no-repeat left center/30px;
+            }
+        }
     }
 }
 

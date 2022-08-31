@@ -21,22 +21,22 @@
 
 .checkbox {
     display: flex;
+    align-items:baseline;
+    input{
+        width: 10%;
+    }
 }
 
 .login__flex {
     display: flex;
     justify-content: center;
-
-    // border: 1px solid black;
 }
 
 .login-container {
     width: 40%;
-
 }
 
 .register__form {
-    // display: none;
     font-size: 1.5rem;
 
     label {
@@ -52,9 +52,16 @@ button {
     width: 30%;
     padding: .5em;
     border-radius: 5px;
+    a{
+        color:black;
+    }
     border: none;
     box-shadow: 1px 1px 3px grey;
     background-color: #F6A608;
+}
+
+.jsstyle{
+    color:red;
 }
 
 .password__reset {
@@ -100,6 +107,13 @@ button {
 .tabs .label_register:hover {
     background: white;
 }
+
+// .register__tab:active{
+//     background-color: white;
+// }
+// .login__tab:active{
+//     background-color: white;
+// }
 
 .tabs .tab-content {
     z-index: 2;
