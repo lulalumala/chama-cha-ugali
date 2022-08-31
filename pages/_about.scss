@@ -1,7 +1,25 @@
 @use "../sass/base";
-.about{
+
+.about {
+    background-color: #FDA600;
+
+    &__info {
+        padding: 1.5em;
+        border-radius: 5px;
+        font-size: 1em;
+        // border: 1px solid black;
+        box-shadow: 2px 2px 5px black;
+    }
+}
+
+.yellow-bg {
     background-color: #FDA600;
 }
-.yellow-bg{
-    background-color: #FDA600;
+
+.about-main {
+    display: flex;
+    padding: 1.5em;
+    h2 {
+        text-decoration: underline;
+    }
 }

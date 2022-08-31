@@ -186,7 +186,21 @@ button {
 .about {
   background-color: #FDA600;
 }
+.about__info {
+  padding: 1.5em;
+  border-radius: 5px;
+  font-size: 1em;
+  box-shadow: 2px 2px 5px black;
+}
 
 .yellow-bg {
   background-color: #FDA600;
+}
+
+.about-main {
+  display: flex;
+  padding: 1.5em;
+}
+.about-main h2 {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
