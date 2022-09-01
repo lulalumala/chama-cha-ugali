@@ -1,6 +1,9 @@
 const emailLogin = document.querySelector(".email-login")
 const passwordLogin = document.querySelector(".password-login")
 const login = document.querySelector(".login")
+// register form
+const firstName = document.querySelector(".first-name")
+const lastName=document.querySelector(".last-name")
 const emailAddress = document.querySelector(".email-input")
 const password = document.querySelector(".password-input")
 const confirmPassword = document.querySelector(".confirm-password")
@@ -69,7 +72,7 @@ submit.addEventListener("click", function (e) {
             }
             else if (num.length == 0) {
                 password.value=null
-                passwordLabel.innerHTML="Your password must have at least one numer"
+                passwordLabel.innerHTML="Your password must have at least one number"
             }
                
     }
@@ -80,3 +83,14 @@ login.addEventListener("click", function () {
     if (emailLogin.length > 1)
    { console.log("Hi")}
 })
+
+// setLocalStorage
+const details = {
+    firstName: firstName,
+    lastName: lastName,
+    fullname: `${firstName} ${lastName}`,
+    email: emailAddress,
+    password:password
+    
+}
+localStorage.setItem("details", details)
