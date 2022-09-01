@@ -2,4 +2,52 @@
 
 .contact{
     background-color: #FDA600;
+   &__form{
+        width: 70%;
+        padding:1em;
+        background-color: white;
+        label{
+            display: block;
+        }
+        input{
+            padding: .5em;
+            width:100%;
+            font-size: 1rem;
+        }
+        input:focus{
+            outline:none;
+        }
+        textarea{
+            width:100%;
+        }
+        textarea:focus{
+            outline:none;
+        }
+    }
+    &__message{
+        background-color: white;
+        padding:.5em;
+    }
 }
+// .contact__form{
+//     width: 70%;
+//     padding:1em;
+//     background-color: white;
+//     label{
+//         display: block;
+//     }
+//     input{
+//         padding: .5em;
+//         width:100%;
+//         font-size: 1rem;
+//     }
+//     input:focus{
+//         outline:none;
+//     }
+//     textarea{
+//         width:100%;
+//     }
+//     textarea:focus{
+//         outline:none;
+//     }
+// }

@@ -29,13 +29,14 @@ nav ul li a {
 }
 
 .homebg {
-  background-image: url("../images/Screenshot_20220831-184210.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Screenshot_20220831-184210.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 header {
-  padding: 1em 0;
+  padding: 0.5em 0;
   width: 100%;
 }
 header img {
@@ -44,7 +45,8 @@ header img {
 
 .home-page {
   display: flex;
-  gap: 0.5em;
+  justify-content: center;
+  gap: 10.5em;
 }
 
 img {
@@ -123,6 +125,7 @@ button {
   width: 30%;
   padding: 0.5em;
   border-radius: 5px;
+  cursor: pointer;
   border: none;
   box-shadow: 1px 1px 3px grey;
   background-color: #F6A608;
@@ -182,17 +185,18 @@ button a {
   width: 100%;
   font-size: 17px;
   line-height: 25px;
-  padding: 25px;
+  padding: 0.5em;
   position: absolute;
   top: 53px;
   left: 0;
   background: #F6A608;
-  border: 1px solid black;
+  box-shadow: 2px 2px 8px black;
 }
 
 .tabs [id^=tab]:checked + label {
   top: 0;
-  padding-top: 17px;
+  background-color: white;
+  padding-top: 0.5em;
 }
 
 .tabs [id^=tab]:checked ~ [id^=tab-content] {
@@ -201,6 +205,32 @@ button a {
 
 .contact {
   background-color: #FDA600;
+}
+.contact__form {
+  width: 70%;
+  padding: 1em;
+  background-color: white;
+}
+.contact__form label {
+  display: block;
+}
+.contact__form input {
+  padding: 0.5em;
+  width: 100%;
+  font-size: 1rem;
+}
+.contact__form input:focus {
+  outline: none;
+}
+.contact__form textarea {
+  width: 100%;
+}
+.contact__form textarea:focus {
+  outline: none;
+}
+.contact__message {
+  background-color: white;
+  padding: 0.5em;
 }
 
 .about {

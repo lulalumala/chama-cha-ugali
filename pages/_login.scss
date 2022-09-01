@@ -5,7 +5,6 @@
     background-color: #F6A608;
 
     input {
-        // display: block;
         margin: .5em 0;
         font-size: 1em;
         padding: 0.5em;
@@ -52,6 +51,7 @@ button {
     width: 30%;
     padding: .5em;
     border-radius: 5px;
+    cursor: pointer;
     a{
         color:black;
     }
@@ -122,17 +122,19 @@ button {
     width: 100%;
     font-size: 17px;
     line-height: 25px;
-    padding: 25px;
+    padding: .5em;
     position: absolute;
     top: 53px;
     left: 0;
     background: #F6A608;
-    border: 1px solid black;
+    box-shadow: 2px 2px 8px black;
+    // border: 1px solid black;
 }
 
 .tabs [id^="tab"]:checked+label {
     top: 0;
-    padding-top: 17px;
+    background-color: white;
+    padding-top: .5em;
 }
 
 
