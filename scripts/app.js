@@ -1,5 +1,5 @@
-const emailInput = document.querySelector(".email-address")
-const passwordAddress = document.querySelector(".password__address")
+const emailLogin = document.querySelector(".email-login")
+const passwordLogin = document.querySelector(".password-login")
 const login = document.querySelector(".login")
 const emailAddress = document.querySelector(".email-input")
 const password = document.querySelector(".password-input")
@@ -12,7 +12,7 @@ const upper = []
 const lower = []
 const special = []
 const num = []
-const passwordValue = emailInput.value
+// const passwordValue = emailInput.value
 // innertext
 const eAddress = document.querySelector(".eaddress")
 const passwordLabel = document.querySelector(".pword")
@@ -73,4 +73,10 @@ submit.addEventListener("click", function (e) {
             }
                
     }
+})
+
+login.addEventListener("click", function () {
+  console.log(passwordLogin.value)
+    if (emailLogin.length > 1)
+   { console.log("Hi")}
 })

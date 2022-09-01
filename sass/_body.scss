@@ -36,8 +36,11 @@ nav {
     }
 }
 
-body {
-    background-color: #F6A608;
+.homebg{
+    background-image: url("../images/Screenshot_20220831-184210.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-color: #F6A608;
 }
 
 header {
@@ -69,9 +72,11 @@ img {
 }
 
 .section__cta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    color:#F6A608;
+    padding:1.5em;
       & h1 {
         font-size: 4rem;
     }
