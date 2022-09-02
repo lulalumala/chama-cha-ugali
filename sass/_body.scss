@@ -22,6 +22,7 @@ nav {
 
     ul {
         li {
+            padding:.5em;
             a {
                 color: #F6A608;
                 text-decoration: none;
@@ -44,22 +45,12 @@ header {
     }
 }
 
-// .section {
-// background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/WhatsApp\ Image\ 2022-08-29\ at\ 9.55.14\ AM\ \(1\).jpeg);
-// background-repeat: no-repeat;
-// border-top: 5px solid #FDA600;
-// background-size: cover;
-// height: 100vh;
 
-
-// }
 .home-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    // border:1px solid white;
-
 }
 
 img {
@@ -96,10 +87,10 @@ ul a {
 }
 
 .mobile-menu{
-    opacity:0;
+   display: none;
 }
 
-@media (max-width:455px){
+@media (max-width:550px){
     .section__cta {
         h1{
             font-size: 5rem;
@@ -109,11 +100,7 @@ ul a {
         }
     }
 
-    nav ul li:not(:first-child){
-        display:none;
-        border:1px solid red;
-    }
-    .mobile-menu{
-        opacity: 1;
-    }
+  nav{
+    flex-direction: column;
+  }
 }

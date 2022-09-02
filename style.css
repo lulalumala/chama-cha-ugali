@@ -14,6 +14,9 @@ nav {
   font-size: 1.5rem;
   font-family: Impact;
 }
+nav ul li {
+  padding: 0.5em;
+}
 nav ul li a {
   color: #F6A608;
   text-decoration: none;
@@ -71,22 +74,18 @@ ul a {
 }
 
 .mobile-menu {
-  opacity: 0;
+  display: none;
 }
 
-@media (max-width: 455px) {
+@media (max-width: 550px) {
   .section__cta h1 {
     font-size: 5rem;
   }
   .section__cta h3 {
     font-size: 2.2rem;
   }
-  nav ul li:not(:first-child) {
-    display: none;
-    border: 1px solid red;
-  }
-  .mobile-menu {
-    opacity: 1;
+  nav {
+    flex-direction: column;
   }
 }
 .login {
@@ -263,6 +262,9 @@ button a {
   .contact__items {
     flex-direction: column;
   }
+  nav {
+    flex-direction: column;
+  }
 }
 .about {
   background-color: #FDA600;
@@ -300,5 +302,8 @@ button a {
   }
   .about img {
     width: 100%;
+  }
+  nav {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
