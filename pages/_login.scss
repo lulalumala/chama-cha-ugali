@@ -141,3 +141,10 @@ button {
 .tabs [id^="tab"]:checked~[id^="tab-content"] {
     display: block;
 }
+
+@media (max-width:798px){
+.login-container{
+    width:90%;
+}
+
+}

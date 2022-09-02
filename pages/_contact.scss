@@ -28,6 +28,11 @@
         background-color: white;
         padding:.5em;
     }
+    &__items{
+        margin-top: 2em;
+        justify-content: space-around;
+        padding:1em;
+    }
 }
 // .contact__form{
 //     width: 70%;
@@ -51,3 +56,14 @@
 //         outline:none;
 //     }
 // }
+@media (max-width:436px){
+    .contact{
+        flex-direction: column;
+        &__form{
+            width: 100%;
+        }
+        &__items{
+            flex-direction: column;
+        }
+    }
+}

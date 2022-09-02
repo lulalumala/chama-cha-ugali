@@ -31,3 +31,14 @@
         text-decoration: underline;
     }
 }
+
+@media (max-width:436px){
+    .about{
+        &-main{
+            flex-direction: column;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

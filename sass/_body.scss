@@ -1,15 +1,15 @@
 @use "../sass/base";
 
-@font-face {
-    font-family: "Alte Haas";
-    src: url(../alte_haas_grotesk/AlteHaasGroteskBold.ttf) format("ttf");
-    src: url(../alte_haas_grotesk/AlteHaasGroteskRegular.ttf) format("ttf");
-}
+// @font-face {
+//     font-family: "Alte Haas";
+//     src: url(../alte_haas_grotesk/AlteHaasGroteskBold.ttf) format("ttf");
+//     src: url(../alte_haas_grotesk/AlteHaasGroteskRegular.ttf) format("ttf");
+// }
 
-@font-face {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    src: url(../Impact-Font/impact.ttf) format("ttf");
-}
+// @font-face {
+//     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+//     src: url(../Impact-Font/impact.ttf) format("ttf");
+// }
 
 nav {
     color: #222222;
@@ -31,14 +31,12 @@ nav {
 }
 
 .homebg{
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/Screenshot_20220831-184210.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/Screenshot_20220831-184210.png") no-repeat center center/cover;
     height: 100vh;
 }
 
 header {
-    padding: .5em 0;
+    padding: .5em;
     width: 100%;
 
     & img {
@@ -58,8 +56,10 @@ header {
 .home-page {
     display: flex;
     justify-content: center;
-    gap: 10.5em;
+    align-items: center;
+    height: 80vh;
     // border:1px solid white;
+
 }
 
 img {
@@ -69,17 +69,18 @@ img {
 .section__cta {
     color:#F6A608;
     padding:1.5em;
+    text-align: center;
       & h1 {
-        font-size: 4rem;
+        font-size: 9rem;
     }
 
     & h3 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     font-family: "Alte Haas";
     button{
-        width: 100%;
+        width: 50%;
        a{
         text-decoration: none;
         color:#222222;
@@ -92,4 +93,27 @@ ul a {
     color: #F6A608;
     text-decoration: none;
     font-size: 1.5rem;
+}
+
+.mobile-menu{
+    opacity:0;
+}
+
+@media (max-width:455px){
+    .section__cta {
+        h1{
+            font-size: 5rem;
+        }
+        h3{
+            font-size: 2.2rem;
+        }
+    }
+
+    nav ul li:not(:first-child){
+        display:none;
+        border:1px solid red;
+    }
+    .mobile-menu{
+        opacity: 1;
+    }
 }
